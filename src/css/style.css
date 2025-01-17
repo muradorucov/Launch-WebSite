@@ -105,6 +105,12 @@ header {
     color: rgb(255, 255, 255);
 }
 
+main {
+    section {
+        padding-bottom: 150px;
+    }
+}
+
 #intro {
     overflow-x: hidden;
 
@@ -137,5 +143,97 @@ header {
         width: 304px;
         height: 264px;
         transform: translateX(60%);
+    }
+}
+
+#service {
+    .subtitle {
+        color: #407BFF;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    h2 {
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 38px;
+    }
+
+    ul {
+        margin-bottom: 1.5rem;
+
+        li {
+            margin-bottom: 10px;
+
+            i {
+                color: #407BFF;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .feedback-desc {
+        color: #000;
+        font-style: italic;
+    }
+
+    .client-card {
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        h5 {
+            font-weight: 400;
+        }
+    }
+
+    .service-big-image {
+        cursor: pointer;
+        box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.1);
+        border: 10px solid #fff;
+        position: relative;
+
+        span {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            border-radius: 50%;
+            box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+
+            i {
+                color: #407BFF;
+            }
+        }
+
+        &::before {
+            content: " ";
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.1);
+            position: absolute;
+            opacity: 0;
+            inset: 0;
+            transition: all .2s;
+        }
+
+        &:hover {
+
+            &::before {
+                opacity: 1;
+            }
+        }
     }
 }

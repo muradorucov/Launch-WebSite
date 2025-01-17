@@ -131,7 +131,7 @@ header {
 
     .dots {
         position: absolute;
-        z-index: 0;
+        z-index: -1;
         top: 0;
         right: 0;
         width: 304px;

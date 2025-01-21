@@ -107,7 +107,7 @@ header {
 
 main {
     section {
-        padding-bottom: 150px;
+        padding-block: 100px;
     }
 }
 
@@ -235,5 +235,138 @@ main {
                 opacity: 1;
             }
         }
+    }
+}
+
+#service-slider {
+    background-color: #f8f9fa;
+
+    img {
+        box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.1);
+        border-radius: 7px;
+    }
+
+    .service-item {
+        padding: 20px;
+        transition: all .3s;
+        border-radius: 7px;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .service-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 30px;
+            background-color: #6fe7dd;
+            box-shadow: 0 2px 10px 0 rgba(111, 231, 221, 0.3);
+            border-radius: 30%;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                color: #fff;
+            }
+        }
+
+        &:hover {
+            box-shadow: 0 2px 10px 0 rgba(111, 231, 221, 0.3);
+            background-color: #fff;
+        }
+    }
+
+    .active {
+        border-right: 5px solid #407BFF;
+    }
+
+
+}
+
+#service-items {
+    .service-card {
+        h3 {
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+            background-color: #6fe7dd;
+            box-shadow: 0 2px 10px 0 rgba(111, 231, 221, 0.3);
+            border-radius: 30%;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                color: #fff;
+            }
+        }
+
+        .icon-yellow {
+            background-color: #ffc93c;
+        }
+    }
+}
+
+#pricing {
+    background-color: #f8f9fa;
+    h2 {
+        font-size: 38px;
+        font-weight: 500;
+    }
+
+    .pricing-card {
+        padding: 50px;
+        background: #ffffff;
+        border-radius: 40px;
+
+        h3 {
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        p {
+            sup {
+                font-size: 20px;
+            }
+
+            color: #407BFF;
+            font-size: 40px;
+        }
+
+        ul {
+            padding: 10px;
+            margin-bottom: 3rem;
+
+            li {
+                padding-left: 30px;
+                margin-bottom: 10px;
+                position: relative;
+
+                i {
+                    color: #407BFF;
+                    font-size: 17px;
+                    position: absolute;
+                    left: -10px;
+                    top: 7px;
+                }
+            }
+        }
+    }
+    .active{
+        box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    .btn{
+        padding: 10px 20px;
     }
 }

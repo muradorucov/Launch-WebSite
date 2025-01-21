@@ -29,6 +29,7 @@
 
 .col-5 {
     width: calc(100%/12*5);
+
 }
 
 .col-6 {
@@ -59,6 +60,10 @@
     width: 100%;
 }
 
+
+[class^='col-'] {
+    padding-inline: 15px;
+}
 
 .flex {
     display: flex;
